@@ -1,0 +1,25 @@
+.card {
+    border: .4rem solid;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin: .8rem;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 40rem;
+}
+
+.card .title {
+    padding: .4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card .content {
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+
+    flex-grow: 1;
+}
