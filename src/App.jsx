@@ -7,11 +7,23 @@ import ComParametro from './components/basicos/ComParametro'
 import Aleatorio from "./components/basicos/Aleatorio"
 import Familia from "./components/basicos/Familia"
 import FamiliaMembro from "./components/basicos/FamiliaMembro"
+import ListaAlunos from "./components/repeticao/ListaAlunos"
+import TabelaProdutos from "./components/repeticao/TabelaProdutos"
+import ParOuImpar from "./components/condicional/ParOuImpar"
 
 export default () => (
     <div className="app">
         <h1>Fundamentos React</h1>
         <div className="cards">
+            <Card titulo="#07 - Renderização Condicional" color="#d03b63"> 
+                <ParOuImpar numero={20}/>
+            </Card>
+            <Card titulo="#06 - Repetição - Tabela Produtos" color="#f63f70"> 
+                <TabelaProdutos />
+            </Card>
+            <Card titulo="#05 - Repetição - Lista Alunos" color="#ff85a6"> 
+                <ListaAlunos />
+            </Card>
             <Card titulo="#04 - Componente com Filhos" color="#f63f70"> 
                 <Familia sobrenome="Buarque">
                     <FamiliaMembro nome="Chico"/>
