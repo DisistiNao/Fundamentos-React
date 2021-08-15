@@ -1,22 +1,28 @@
 import "./App.css"
 import React from 'react'
 
-import Card from "./components/layout/Card"
-import Primeiro from './components/basicos/Primeiro'
-import ComParametro from './components/basicos/ComParametro'
-import Aleatorio from "./components/basicos/Aleatorio"
-import Familia from "./components/basicos/Familia"
-import FamiliaMembro from "./components/basicos/FamiliaMembro"
-import ListaAlunos from "./components/repeticao/ListaAlunos"
-import TabelaProdutos from "./components/repeticao/TabelaProdutos"
+import UsuarioInfo from "./components/condicional/UsuarioInfo"
 import ParOuImpar from "./components/condicional/ParOuImpar"
+import TabelaProdutos from "./components/repeticao/TabelaProdutos"
+import ListaAlunos from "./components/repeticao/ListaAlunos"
+import FamiliaMembro from "./components/basicos/FamiliaMembro"
+import Familia from "./components/basicos/Familia"
+import Aleatorio from "./components/basicos/Aleatorio"
+import ComParametro from './components/basicos/ComParametro'
+import Primeiro from './components/basicos/Primeiro'
+import Card from "./components/layout/Card"
 
 export default () => (
     <div className="app">
         <h1>Fundamentos React</h1>
+        
         <div className="cards">
+            {/* <Card titulo="#08 - Renderização Condicional" color="#9f2042"> 
+            </Card> */}
             <Card titulo="#07 - Renderização Condicional" color="#d03b63"> 
                 <ParOuImpar numero={20}/>
+                <UsuarioInfo usuario={{nome: 'Fernando'}}/>
+                <UsuarioInfo usuario={{email: 'fer@nando.com'}}/>
             </Card>
             <Card titulo="#06 - Repetição - Tabela Produtos" color="#f63f70"> 
                 <TabelaProdutos />
