@@ -6,7 +6,7 @@ import DisplaySorteio from './DisplaySorteio'
 export default class MegaSena extends Component {
     state = {
         quantNums: this.props.quantNums || 7,
-        minSorteio: this.props.minSorteio || 0,
+        minSorteio: this.props.minSorteio || 1,
         maxSorteio: this.props.maxSorteio || 60,
     }
 
