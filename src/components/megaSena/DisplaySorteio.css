@@ -1,0 +1,13 @@
+.display span {
+    /* background-color: darkcyan; */
+    font-size: 1.2em;
+    margin: .4rem;
+}
+
+.display button {
+    background-color: #f63f70;
+    color: #fff;
+    
+    border: .2rem solid #f63f70;
+    margin-top: .8rem;
+}
